@@ -1,5 +1,7 @@
 print('PyCalculator')
 
+history_of_calculations = []
+
 while True:
     number_one = int(input('Enter number 1: '))
     number_two = int(input('Enter number 2: '))
@@ -8,20 +10,28 @@ while True:
 
     if operator == '+':
         print(f'Calculation result: {number_one + number_two}')
+        history_of_calculations.append(f'{number_one} + {number_two} = {number_one + number_two}')
     elif operator == '-':
         print(f'Calculation result: {number_one - number_two}')
+        history_of_calculations.append(f'{number_one} - {number_two} = {number_one - number_two}')
     elif operator == '/':
         if number_two != 0:
             print(f'Calculation result: {number_one / number_two}')
+            history_of_calculations.append(f'{number_one} / {number_two} = {number_one / number_two}')
         else:
             print(f'Error: Division by zero!')
     elif operator == '*':
         print(f'Calculation result: {number_one * number_two}')
+        history_of_calculations.append(f'{number_one} * {number_two} = {number_one * number_two}')
     elif operator == '**':
         print(f'Calculation result: {number_one ** number_two}')
+        history_of_calculations.append(f'{number_one} ** {number_two} = {number_one ** number_two}')
     elif operator == '//':
         print(f'Calculation result: {number_one // number_two}')
+        history_of_calculations.append(f'{number_one} // {number_two} = {number_one // number_two}')
     elif operator == 'quit':
         break
     else:
         print('Incorrect operator!')
+
+print(f'History of calculations:\n{history_of_calculations}')
