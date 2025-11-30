@@ -5,6 +5,7 @@ A simple Python calculator created for learning and practice purposes
 - Basic arithmetic operations (+, -, *, /)
 - Exponentiation (**) and floor division (//) 
 - Minimal error handling (division by zero)
+- Calculation history (When exiting the program)
 
 ## Installation & Usage
 ```bash
