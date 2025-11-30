@@ -34,4 +34,5 @@ while True:
     else:
         print('Incorrect operator!')
 
-print(f'History of calculations:\n{history_of_calculations}')
+for i, calc in enumerate(history_of_calculations, start=1):
+    print(f'{i}. {calc}') 
